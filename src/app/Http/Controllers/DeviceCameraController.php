@@ -100,18 +100,12 @@ class DeviceCameraController extends Controller
             $xml = simplexml_load_string($response);
 
             if ($xml->StatusCode == 200) {
-
-                $FeatureCode = $xml->FeatureCode;
-                Log::channel("camerasdk")->info($name . ' - ' . $system_user_id . ' - ' . $xml->StatusString . ' - Successfully Uploaded');
-                return  $xml->StatusString;
+                return ["statusCode" => 200, "message" => $xml->StatusString];
             } else {
-                Log::channel("camerasdk")->error($name . ' - ' . $system_user_id . ' - ' . $xml->StatusString . ' - Failed: ');
-                return  $xml->StatusString;
+                return ["statusCode" => 500, "message" => $xml->StatusString , "user_id" => $system_user_id];
             }
         } else {
-
-            Log::channel("camerasdk")->info($name . ' - ' . $system_user_id . ' - ' . $sessionResponse['message']);
-            return $sessionResponse['message'];
+            return ["statusCode" => 500, "message" => $sessionResponse['message']];
         }
     }
     public function getActiveSessionId()
@@ -184,8 +178,6 @@ class DeviceCameraController extends Controller
             $response = curl_exec($curl);
             curl_close($curl);
             return $response;
-        } else {
-            Log::channel("camerasdk")->info('CURL ' .  $url . '- EMPTY SDK URL in DB Devices Table');
         }
     }
 }

@@ -152,55 +152,106 @@ class SDKControllerV1 extends Controller
         return  $message;
     }
 
-    public function getActiveSessionId($camera_sdk_url)
+    // public function getActiveSessionId($camera_sdk_url)
+    // {
+    //     try {
+    //         $endpoint = $camera_sdk_url . '/ISAPI/Security/Login';
+
+    //         $post_data = ' ';
+
+    //         $response = $this->curlPost($endpoint, $post_data);
+
+    //         $xml = simplexml_load_string($response);
+
+    //         if (!$xml) {
+    //             throw new \Exception("Server Error. Address: " . $camera_sdk_url);
+    //         }
+
+    //         $sessionId = (string) $xml->SessionId;
+
+    //         if (env("CAMERA_SDK_LOGIN_USERNAME") == '') {
+    //             throw new \Exception("SDK Username is Empty.");
+    //         }
+
+    //         if (env("CAMERA_SDK_LOGIN_PASSWORD") == '') {
+    //             throw new \Exception("SDK Password is Empty.");
+    //         }
+
+    //         $md5string = md5($sessionId . ':' . "admin" . ':' . "Admin@123" . ':IPCAM');
+
+    //         if ($md5string == '') {
+    //             throw new \Exception("Invalid MD5 String.");
+    //         }
+
+    //         $post_data = '<UserCheck>
+    //             <Username>' . env("CAMERA_SDK_LOGIN_USERNAME") . '</Username>
+    //             <Password>' . $md5string . '</Password>
+    //             <SessionId>' . $sessionId . '</SessionId>
+    //         </UserCheck>';
+    //         $response = $this->curlPost($endpoint, $post_data);
+
+    //         $xml = simplexml_load_string($response);
+    //         $StatusCode = (string) $xml->StatusCode;
+
+    //         if ($StatusCode == 200) {
+    //             return ["message" => $sessionId, "status" => true];
+    //         } else {
+    //             Log::channel("camerasdk")->error("SessionID activation is failed");
+    //             throw new \Exception("SessionID activation is failed.");
+    //         }
+    //     } catch (\Throwable $th) {
+    //         throw $th;
+    //     }
+    // }
+
+
+    public function getActiveSessionId()
     {
-        try {
-            $endpoint = $camera_sdk_url . '/ISAPI/Security/Login';
+        $post_data = ' ';
 
-            $post_data = ' ';
+        $response = $this->curlPost('/ISAPI/Security/Login', $post_data);
 
-            $response = $this->curlPost($endpoint, $post_data);
+        $xml = simplexml_load_string($response);
+        if ($xml == '') {
+            return ["message" => "SessionID is not generated.", "status" => false];
+        }
+        $sessionId = (string) $xml->SessionId;
 
-            $xml = simplexml_load_string($response);
 
-            if (!$xml) {
-                throw new \Exception("Server Error. Address: " . $camera_sdk_url);
-            }
+        //activate the sessionid
 
-            $sessionId = (string) $xml->SessionId;
+        if ($sessionId == '') {
+            return ["message" => "SessionID is not geenrated.", "status" => false];
+        } else if (env("CAMERA_SDK_LOGIN_USERNAME") == '') {
+            return ["message" => "SDK Username is Empty ", "status" => false];
+        } else if (env("CAMERA_SDK_LOGIN_PASSWORD")  == '') {
+            return   ["message" => "SDK Password is Empty", "status" => false];
+        }
 
-            if (env("CAMERA_SDK_LOGIN_USERNAME") == '') {
-                throw new \Exception("SDK Username is Empty.");
-            }
+        $md5string = md5($sessionId . ':' . "admin" . ':' . "Admin@123" . ':IPCAM');
+        if ($md5string != '') {
 
-            if (env("CAMERA_SDK_LOGIN_PASSWORD") == '') {
-                throw new \Exception("SDK Password is Empty.");
-            }
 
-            $md5string = md5($sessionId . ':' . env("CAMERA_SDK_LOGIN_USERNAME") . ':' . env("CAMERA_SDK_LOGIN_PASSWORD") . ':IPCAM');
-
-            if ($md5string == '') {
-                throw new \Exception("Invalid MD5 String.");
-            }
 
             $post_data = '<UserCheck>
                 <Username>' . env("CAMERA_SDK_LOGIN_USERNAME") . '</Username>
                 <Password>' . $md5string . '</Password>
                 <SessionId>' . $sessionId . '</SessionId>
             </UserCheck>';
-            $response = $this->curlPost($endpoint, $post_data);
+            $response = $this->curlPost('/ISAPI/Security/Login', $post_data);
 
             $xml = simplexml_load_string($response);
-            $StatusCode = (string) $xml->StatusCode;
+            if ($xml) {
+                $StatusCode = (string) $xml->StatusCode;
+                if ($StatusCode == 200) {
 
-            if ($StatusCode == 200) {
-                return ["message" => $sessionId, "status" => true];
-            } else {
-                Log::channel("camerasdk")->error("SessionID activation is failed");
-                throw new \Exception("SessionID activation is failed.");
+                    return   ["message" => $sessionId, "status" => true];
+                } else {
+                    return   ["message" => "SessionID activation is failed", "status" => false];
+                }
             }
-        } catch (\Throwable $th) {
-            throw $th;
+        } else {
+            return   ["message" => "Invalid MD5 String", "status" => false];
         }
     }
 

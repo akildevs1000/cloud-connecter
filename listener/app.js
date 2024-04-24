@@ -94,36 +94,34 @@ function saveUNRegisteredMemberstoImage(xmlData, TodayDatetime, deviceId) {
             console.error("Error parsing XML:", err);
             logConsoleStatus(`${TodayDatetime} - Error parsing XML: ${err}  `);
           } else {
-            const DeviceID = result.DetectedFaceList.DeviceID[0];
-            const FaceId = result.DetectedFaceList.Face_0[0].FaceID[0];
+            const FaceId = result.DetectedFaceList.Face_0[0].FaceID[0] ?? null;
             const Snapshot = result.DetectedFaceList.Face_0[0].Snapshot[0];
             const SnapshotNum =
               result.DetectedFaceList.Face_0[0].FaceSnapFile[0] ?? 0;
             const Quality = result.DetectedFaceList.Face_0[0].Quality[0];
 
-            
-            console.log(Quality);
-
-            if (Quality > 0.9) {
-              logConsoleStatus(
-                `${TodayDatetime} - Saved unregistered member - Face Id:  ${FaceId} - Quality:${Quality}`
-              );
-
-              logConsoleStatus("FaceId:", FaceId);
-              logConsoleStatus("Device ID:", DeviceID);
-
-
-              // Convert base64 to a Buffer
-              const buffer = Buffer.from(Snapshot, "base64");
-
-              let filePath = `${BASE_URL}/public/camera-unregsitered-faces-logs/${FaceId}/${SnapshotNum}.jpg`;
-              const logFileDir = path.dirname(filePath);
-              if (!fs.existsSync(logFileDir)) {
-                fs.mkdirSync(logFileDir, { recursive: true });
-              }
-
-              fs.writeFileSync(filePath, buffer);
+            if (Quality < 0.6) {
+              console.log(Quality);
+              console.log("Cannot record low quality image");
+              return;
             }
+
+
+            logConsoleStatus(
+              `${TodayDatetime} - Saved unregistered member - Face Id:  ${FaceId} - Quality:${Quality}`
+            );
+
+
+            // Convert base64 to a Buffer
+            const buffer = Buffer.from(Snapshot, "base64");
+
+            let filePath = `${BASE_URL}/public/camera-unregsitered-faces-logs/${FaceId}/${SnapshotNum}.jpg`;
+            const logFileDir = path.dirname(filePath);
+            if (!fs.existsSync(logFileDir)) {
+              fs.mkdirSync(logFileDir, { recursive: true });
+            }
+
+            fs.writeFileSync(filePath, buffer);
           }
         });
 

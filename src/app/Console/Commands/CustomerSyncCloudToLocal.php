@@ -7,6 +7,7 @@ use App\Http\Controllers\SDKControllerV1;
 use App\Models\Customer;
 use App\Models\CustomerSync;
 use App\Models\Device;
+use App\Models\Employee;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
 
@@ -17,14 +18,14 @@ class CustomerSyncCloudToLocal extends Command
      *
      * @var string
      */
-    protected $signature = 'customer-sync-cloud-to-local';
+    protected $signature = 'employee-sync-cloud-to-local';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'customer-sync-cloud-to-local';
+    protected $description = 'employee-sync-cloud-to-local';
 
     /**
      * Execute the console command.
@@ -51,33 +52,30 @@ class CustomerSyncCloudToLocal extends Command
                 return;
             }
 
-            $company_id = $first->company_id;
-            $request = $first->payload;
+            $company_id = 2;
 
-            $Devices = Device::where('model_number', "CAMERA1")->whereIn("device_id", $request["snList"])->get(["device_id", "camera_sdk_url", "branch_id", "company_id"]);
+            $persons = Employee::where("company_id", 2)->get();
+            echo json_encode($persons);
+            return;
+            $Devices = Device::where('device_category_name', "CAMERA")->get(["device_id", "camera_sdk_url", "branch_id", "company_id"]);
 
             $userIds = [];
             foreach ($Devices as  $value) {
                 $sessionResponse = (new SDKControllerV1)->getActiveSessionId($value['camera_sdk_url'] = "192.168.2.27");
 
-                foreach ($request['personList'] as  $persons) {
-                    if (isset($persons['faceImage'])) {
-                        $personProfilePic = $persons['faceImage'];
-                        if ($personProfilePic != '') {
-                            $imageData = file_get_contents($personProfilePic);
-                            $md5string = base64_encode($imageData);
+                foreach ($persons as  $person) {
+                    $imageData = file_get_contents($person->profil);
+                    $md5string = base64_encode($imageData);
 
-                            $DCController = new DeviceCameraController($value['camera_sdk_url']);
+                    $DCController = new DeviceCameraController($value['camera_sdk_url']);
 
-                            $childResponse = $DCController->pushUserToCameraDeviceV1($sessionResponse, $persons['name'],  $persons['userCode'], $md5string);
+                    $childResponse = $DCController->pushUserToCameraDeviceV1($sessionResponse, $persons['name'],  $persons['userCode'], $md5string);
 
-                            if ($childResponse['StatusCode'] == 200) {
-                                $userIds[] = $persons['userCode'];
-                            } else {
-                                Log::error("User with " . $persons['userCode'] . " id for company id ( " . $company_id . " ) cannot upload at $command command\n.");
-                                $this->info("User with " . $persons['userCode'] . " id for company id ( " . $company_id . " ) cannot upload at $command command.");
-                            }
-                        }
+                    if ($childResponse['StatusCode'] == 200) {
+                        $userIds[] = $persons['userCode'];
+                    } else {
+                        Log::error("User with " . $persons['userCode'] . " id for company id ( " . $company_id . " ) cannot upload at $command command\n.");
+                        $this->info("User with " . $persons['userCode'] . " id for company id ( " . $company_id . " ) cannot upload at $command command.");
                     }
                 }
             }

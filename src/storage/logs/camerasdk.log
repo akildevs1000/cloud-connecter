@@ -1162,3 +1162,158 @@
 [2024-04-24 16:35:20] production.INFO: customer-2510 - 2510 - OK - Successfully Uploaded  
 [2024-04-24 16:35:21] production.INFO: customer-2163 - 2163 - OK - Successfully Uploaded  
 [2024-04-24 16:35:21] production.INFO: customer-2163 - 2163 - OK - Successfully Uploaded  
+[2024-04-24 16:45:02] production.INFO: customer-8838 - 8838 - OK - Successfully Uploaded  
+[2024-04-24 16:45:03] production.INFO: customer-8838 - 8838 - OK - Successfully Uploaded  
+[2024-04-24 16:45:14] production.ERROR: customer-5639 - 5639 - Extract Feature Failed - Failed:   
+[2024-04-24 16:45:24] production.INFO: customer-5639 - 5639 - SessionID is not generated.  
+[2024-04-24 16:45:25] production.ERROR: customer-5930 - 5930 - Extract Feature Failed - Failed:   
+[2024-04-24 16:45:32] production.ERROR: customer-5930 - 5930 - Extract Feature Failed - Failed:   
+[2024-04-24 16:55:51] production.ERROR: customer-4822 - 4822 - Extract Feature Failed - Failed:   
+[2024-04-24 16:55:52] production.ERROR: customer-4822 - 4822 - Extract Feature Failed - Failed:   
+[2024-04-24 16:57:16] production.ERROR: customer-7475 - 7475 - Extract Feature Failed - Failed:   
+[2024-04-24 16:57:16] production.ERROR: customer-7475 - 7475 - Extract Feature Failed - Failed:   
+[2024-04-24 17:04:09] production.ERROR: customer-2236 - 2236 - Extract Feature Failed - Failed:   
+[2024-04-24 17:04:09] production.ERROR: customer-2236 - 2236 - Extract Feature Failed - Failed:   
+[2024-04-24 17:07:57] production.ERROR: customer-6425 - 6425 - Extract Feature Failed - Failed:   
+[2024-04-24 17:07:58] production.ERROR: customer-6425 - 6425 - Extract Feature Failed - Failed:   
+[2024-04-24 17:09:32] production.INFO: customer-3828 - 3828 - OK - Successfully Uploaded  
+[2024-04-24 17:09:32] production.INFO: customer-3828 - 3828 - OK - Successfully Uploaded  
+[2024-04-24 17:12:38] production.ERROR: customer-9120 - 9120 - Extract Feature Failed - Failed:   
+[2024-04-24 17:12:39] production.ERROR: customer-9120 - 9120 - Extract Feature Failed - Failed:   
+[2024-04-24 20:09:13] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:09:13] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:09:32] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:09:32] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:09:45] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:09:45] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:09:58] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:09:58] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:10:11] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:10:11] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:10:19] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:10:19] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:10:32] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:10:32] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:10:45] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:10:45] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:10:59] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:10:59] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:11:12] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:11:12] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:11:25] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:11:25] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:11:34] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:11:34] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:11:48] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:11:48] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:12:02] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:12:02] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:12:12] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:12:12] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:12:26] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:12:26] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:12:40] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:12:40] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:14:44] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:14:44] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:15:44] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:15:44] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:16:15] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:16:15] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:16:47] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:16:47] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:16:59] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:16:59] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:17:24] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:17:24] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:17:44] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:17:44] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:17:59] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:17:59] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:18:14] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:18:14] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:18:28] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:18:28] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:18:43] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:18:43] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:18:58] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:18:58] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:19:13] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:19:13] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:19:34] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:19:34] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:19:34] production.ERROR: SessionID activation is failed  
+[2024-04-24 20:19:47] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:19:47] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:19:47] production.ERROR: SessionID activation is failed  
+[2024-04-24 20:20:42] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:20:42] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:20:42] production.ERROR: SessionID activation is failed  
+[2024-04-24 20:20:55] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:20:55] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:20:55] production.ERROR: SessionID activation is failed  
+[2024-04-24 20:21:08] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:21:08] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:21:08] production.ERROR: SessionID activation is failed  
+[2024-04-24 20:21:22] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:21:22] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:21:22] production.ERROR: SessionID activation is failed  
+[2024-04-24 20:21:35] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:21:35] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:21:35] production.ERROR: SessionID activation is failed  
+[2024-04-24 20:21:48] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:21:48] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:21:48] production.ERROR: SessionID activation is failed  
+[2024-04-24 20:22:01] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:22:01] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:22:01] production.ERROR: SessionID activation is failed  
+[2024-04-24 20:22:15] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:22:15] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:22:15] production.ERROR: SessionID activation is failed  
+[2024-04-24 20:22:28] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:22:28] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:22:28] production.ERROR: SessionID activation is failed  
+[2024-04-24 20:22:41] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:22:41] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:22:41] production.ERROR: SessionID activation is failed  
+[2024-04-24 20:22:57] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:22:57] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:22:57] production.ERROR: SessionID activation is failed  
+[2024-04-24 20:23:11] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:23:11] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:23:11] production.ERROR: SessionID activation is failed  
+[2024-04-24 20:23:24] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:23:24] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:23:24] production.ERROR: SessionID activation is failed  
+[2024-04-24 20:23:37] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:23:37] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:23:37] production.ERROR: SessionID activation is failed  
+[2024-04-24 20:23:51] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:23:51] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-24 20:23:51] production.ERROR: SessionID activation is failed  
+[2024-04-24 20:24:10] production.INFO: CURL /ISAPI/Security/Login-  
+[2024-04-24 20:24:23] production.INFO: CURL /ISAPI/Security/Login-  
+[2024-04-24 20:24:38] production.INFO: CURL /ISAPI/Security/Login-  
+[2024-04-24 20:25:12] production.INFO: CURL /ISAPI/Security/Login-  
+[2024-04-24 20:25:26] production.INFO: CURL /ISAPI/Security/Login-  
+[2024-04-24 20:25:40] production.INFO: CURL /ISAPI/Security/Login-  
+[2024-04-24 20:25:54] production.INFO: CURL /ISAPI/Security/Login-  
+[2024-04-24 20:26:08] production.INFO: CURL /ISAPI/Security/Login-  
+[2024-04-24 20:26:23] production.INFO: CURL /ISAPI/Security/Login-  
+[2024-04-24 20:26:37] production.INFO: CURL /ISAPI/Security/Login-  
+[2024-04-24 20:26:51] production.INFO: CURL /ISAPI/Security/Login-  
+[2024-04-24 20:27:10] production.INFO: CURL /ISAPI/Security/Login-  
+[2024-04-24 20:27:25] production.INFO: CURL /ISAPI/Security/Login-  
+[2024-04-24 20:27:39] production.INFO: CURL /ISAPI/Security/Login-  
+[2024-04-24 20:27:53] production.INFO: CURL /ISAPI/Security/Login-  
+[2024-04-24 20:28:07] production.INFO: CURL /ISAPI/Security/Login-  
+[2024-04-24 20:28:21] production.INFO: CURL /ISAPI/Security/Login-  
+[2024-04-24 20:28:35] production.INFO: CURL /ISAPI/Security/Login-  
+[2024-04-24 20:28:49] production.INFO: CURL /ISAPI/Security/Login-  
+[2024-04-24 20:29:03] production.INFO: CURL /ISAPI/Security/Login-  
+[2024-04-24 20:29:17] production.INFO: CURL /ISAPI/Security/Login-  
+[2024-04-24 20:29:30] production.INFO: CURL /ISAPI/Security/Login-  
+[2024-04-24 20:29:44] production.INFO: CURL /ISAPI/Security/Login-  
+[2024-04-24 20:29:58] production.INFO: CURL /ISAPI/Security/Login-  
+[2024-04-24 20:30:12] production.INFO: CURL /ISAPI/Security/Login-  
+[2024-04-24 20:30:26] production.INFO: CURL /ISAPI/Security/Login-  
