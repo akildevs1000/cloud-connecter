@@ -106,3 +106,25 @@ Stack trace:
 #13 D:\projects\Analytics-App\web-app\backend\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(151): Illuminate\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
 #14 D:\projects\Analytics-App\web-app\backend\artisan(37): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
 #15 {main}  
+[2024-04-23 19:49:10] production.ERROR: Cron: Analytics: Exception in sync_tanent_report  : Company Id :1, : Date :2024-04-23, ErrorException: include(D:\projects\cloud-connecter\src\vendor\composer/../../app/Http/Controllers/CustomerReportController.php): Failed to open stream: No such file or directory in D:\projects\cloud-connecter\src\vendor\composer\ClassLoader.php:571
+Stack trace:
+#0 D:\projects\cloud-connecter\src\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php(270): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'include(D:\\proj...', 'D:\\projects\\clo...', 571)
+#1 D:\projects\cloud-connecter\src\vendor\composer\ClassLoader.php(571): Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(2, 'include(D:\\proj...', 'D:\\projects\\clo...', 571)
+#2 D:\projects\cloud-connecter\src\vendor\composer\ClassLoader.php(571): include('D:\\projects\\clo...')
+#3 D:\projects\cloud-connecter\src\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('D:\\projects\\clo...')
+#4 D:\projects\cloud-connecter\src\app\Console\Commands\sync_customer_report.php(37): Composer\Autoload\ClassLoader->loadClass('App\\Http\\Contro...')
+#5 D:\projects\cloud-connecter\src\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(36): App\Console\Commands\sync_customer_report->handle()
+#6 D:\projects\cloud-connecter\src\vendor\laravel\framework\src\Illuminate\Container\Util.php(41): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#7 D:\projects\cloud-connecter\src\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(93): Illuminate\Container\Util::unwrapIfClosure(Object(Closure))
+#8 D:\projects\cloud-connecter\src\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(37): Illuminate\Container\BoundMethod::callBoundMethod(Object(Illuminate\Foundation\Application), Array, Object(Closure))
+#9 D:\projects\cloud-connecter\src\vendor\laravel\framework\src\Illuminate\Container\Container.php(661): Illuminate\Container\BoundMethod::call(Object(Illuminate\Foundation\Application), Array, Array, NULL)
+#10 D:\projects\cloud-connecter\src\vendor\laravel\framework\src\Illuminate\Console\Command.php(183): Illuminate\Container\Container->call(Array)
+#11 D:\projects\cloud-connecter\src\vendor\symfony\console\Command\Command.php(326): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#12 D:\projects\cloud-connecter\src\vendor\laravel\framework\src\Illuminate\Console\Command.php(153): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#13 D:\projects\cloud-connecter\src\vendor\symfony\console\Application.php(1078): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 D:\projects\cloud-connecter\src\vendor\symfony\console\Application.php(324): Symfony\Component\Console\Application->doRunCommand(Object(App\Console\Commands\sync_customer_report), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 D:\projects\cloud-connecter\src\vendor\symfony\console\Application.php(175): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 D:\projects\cloud-connecter\src\vendor\laravel\framework\src\Illuminate\Console\Application.php(102): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 D:\projects\cloud-connecter\src\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(155): Illuminate\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 D:\projects\cloud-connecter\src\artisan(37): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 {main}  

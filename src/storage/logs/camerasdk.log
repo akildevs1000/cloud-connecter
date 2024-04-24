@@ -811,3 +811,354 @@
 [2024-04-08 17:37:24] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
 [2024-04-08 17:38:43] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
 [2024-04-08 17:38:43] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 13:50:58] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 13:50:58] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 13:51:00] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 13:51:00] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 13:54:01] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 13:54:01] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 13:54:01] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 13:54:01] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 13:55:00] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 13:55:00] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 13:55:01] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 13:55:01] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 13:57:16] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 13:57:16] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 13:57:33] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 13:57:33] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 13:57:50] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 13:57:50] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 13:59:20] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 13:59:20] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 14:01:07] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 14:01:07] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 14:01:19] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 14:01:19] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 14:01:31] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 14:01:31] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 14:01:43] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 14:01:43] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 14:01:54] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 14:01:54] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 14:02:06] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 14:02:06] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 14:02:16] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 14:02:16] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 14:02:48] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 14:02:48] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 14:03:21] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 14:03:21] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 15:09:37] production.INFO: customer-9841 - 9841 - OK - Successfully Uploaded  
+[2024-04-09 15:09:38] production.INFO: customer-8212 - 8212 - OK - Successfully Uploaded  
+[2024-04-09 15:17:09] production.INFO: customer-9853 - 9853 - OK - Successfully Uploaded  
+[2024-04-09 15:19:03] production.ERROR: customer-1712 - 1712 - Face Exists With Name "customer-9853" - Failed:   
+[2024-04-09 15:20:15] production.INFO: customer-1957 - 1957 - OK - Successfully Uploaded  
+[2024-04-09 15:20:47] production.INFO: customer-4152 - 4152 - OK - Successfully Uploaded  
+[2024-04-09 15:23:11] production.ERROR: customer-3529 - 3529 - Extract Feature Failed - Failed:   
+[2024-04-09 15:27:07] production.INFO: customer-4791 - 4791 - OK - Successfully Uploaded  
+[2024-04-09 15:27:39] production.ERROR: customer-4771 - 4771 - Face Exists With Name "customer-4791" - Failed:   
+[2024-04-09 16:26:20] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 16:26:20] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 16:26:36] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 16:26:36] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 16:33:09] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 16:33:09] production.INFO: CURL 192.168.2.27/ISAPI/Security/Login-  
+[2024-04-09 17:59:46] production.INFO: customer-8656 - 8656 - SessionID is not generated.  
+[2024-04-09 18:00:19] production.INFO: customer-1015 - 1015 - SessionID is not generated.  
+[2024-04-09 18:01:11] production.INFO: customer-6105 - 6105 - SessionID is not generated.  
+[2024-04-09 18:09:28] production.INFO: customer-7110 - 7110 - OK - Successfully Uploaded  
+[2024-04-09 19:22:53] production.ERROR: customer-8304 - 8304 - Face Exists With Name "customer-7110" - Failed:   
+[2024-04-09 19:24:59] production.INFO: customer-1419 - 1419 - OK - Successfully Uploaded  
+[2024-04-09 19:27:33] production.ERROR: customer-9969 - 9969 - Extract Feature Failed - Failed:   
+[2024-04-09 19:33:32] production.ERROR: customer-1992 - 1992 - Extract Feature Failed - Failed:   
+[2024-04-13 11:18:57] production.ERROR: customer-5821 - 5821 - Extract Feature Failed - Failed:   
+[2024-04-13 11:19:00] production.ERROR: customer-6531 - 6531 - Extract Feature Failed - Failed:   
+[2024-04-13 11:19:01] production.INFO: customer-1237 - 1237 - OK - Successfully Uploaded  
+[2024-04-13 11:19:02] production.INFO: customer-9123 - 9123 - OK - Successfully Uploaded  
+[2024-04-13 11:19:02] production.ERROR: customer-7609 - 7609 - Extract Feature Failed - Failed:   
+[2024-04-13 11:19:03] production.INFO: customer-8727 - 8727 - OK - Successfully Uploaded  
+[2024-04-13 11:19:06] production.INFO: customer-7426 - 7426 - OK - Successfully Uploaded  
+[2024-04-13 11:19:07] production.INFO: customer-7287 - 7287 - OK - Successfully Uploaded  
+[2024-04-13 11:19:09] production.ERROR: customer-3855 - 3855 - Extract Feature Failed - Failed:   
+[2024-04-13 11:40:55] production.ERROR: customer-6725 - 6725 - Extract Feature Failed - Failed:   
+[2024-04-13 12:31:26] production.ERROR: customer-8033 - 8033 - Extract Feature Failed - Failed:   
+[2024-04-13 13:05:42] production.ERROR: customer-6029 - 6029 - Extract Feature Failed - Failed:   
+[2024-04-13 13:10:42] production.INFO: customer-6282 - 6282 - OK - Successfully Uploaded  
+[2024-04-13 14:57:55] production.ERROR: customer-7563 - 7563 - Extract Feature Failed - Failed:   
+[2024-04-23 19:08:20] production.ERROR: customer-6956 - 6956 - Extract Feature Failed - Failed:   
+[2024-04-23 19:08:22] production.ERROR: customer-5413 - 5413 - Extract Feature Failed - Failed:   
+[2024-04-23 19:08:23] production.INFO: customer-5636 - 5636 - OK - Successfully Uploaded  
+[2024-04-23 19:08:23] production.ERROR: customer-8909 - 8909 - Extract Feature Failed - Failed:   
+[2024-04-23 19:08:24] production.INFO: customer-8094 - 8094 - OK - Successfully Uploaded  
+[2024-04-23 19:08:24] production.ERROR: customer-5965 - 5965 - Face Exists With Name "customer-8094" - Failed:   
+[2024-04-23 19:08:25] production.ERROR: customer-3454 - 3454 - Face Exists With Name "customer-8094" - Failed:   
+[2024-04-23 19:11:10] production.ERROR: customer-2867 - 2867 - Extract Feature Failed - Failed:   
+[2024-04-23 19:12:52] production.INFO: customer-1737 - 1737 - OK - Successfully Uploaded  
+[2024-04-23 19:26:12] production.INFO: customer-1085 - 1085 - OK - Successfully Uploaded  
+[2024-04-23 19:26:14] production.INFO: customer-3897 - 3897 - OK - Successfully Uploaded  
+[2024-04-23 19:26:26] production.INFO: customer-2748 - 2748 - OK - Successfully Uploaded  
+[2024-04-23 19:26:27] production.ERROR: customer-1869 - 1869 - Extract Feature Failed - Failed:   
+[2024-04-23 19:26:29] production.ERROR: customer-2148 - 2148 - Extract Feature Failed - Failed:   
+[2024-04-23 19:26:30] production.INFO: customer-1225 - 1225 - OK - Successfully Uploaded  
+[2024-04-23 19:26:42] production.ERROR: customer-9206 - 9206 - Extract Feature Failed - Failed:   
+[2024-04-23 19:26:44] production.INFO: customer-1841 - 1841 - OK - Successfully Uploaded  
+[2024-04-23 19:26:45] production.ERROR: customer-4387 - 4387 - Face Exists With Name "customer-1841" - Failed:   
+[2024-04-23 19:26:58] production.INFO: customer-8797 - 8797 - OK - Successfully Uploaded  
+[2024-04-23 19:27:10] production.ERROR: customer-7345 - 7345 - Extract Feature Failed - Failed:   
+[2024-04-23 19:27:10] production.INFO: customer-7388 - 7388 - OK - Successfully Uploaded  
+[2024-04-23 19:27:31] production.INFO: customer-1163 - 1163 - SessionID is not generated.  
+[2024-04-23 19:27:42] production.INFO: customer-1190 - 1190 - SessionID is not generated.  
+[2024-04-23 19:28:02] production.INFO: customer-7129 - 7129 - SessionID is not generated.  
+[2024-04-23 19:28:13] production.INFO: customer-4223 - 4223 - SessionID is not generated.  
+[2024-04-23 19:28:24] production.ERROR: customer-4920 - 4920 - Extract Feature Failed - Failed:   
+[2024-04-23 19:29:37] production.INFO: customer-8708 - 8708 - OK - Successfully Uploaded  
+[2024-04-23 19:29:48] production.INFO: customer-1152 - 1152 - OK - Successfully Uploaded  
+[2024-04-23 19:30:00] production.ERROR: customer-5822 - 5822 - Extract Feature Failed - Failed:   
+[2024-04-23 19:30:01] production.ERROR: customer-5801 - 5801 - Extract Feature Failed - Failed:   
+[2024-04-23 19:30:01] production.ERROR: customer-3313 - 3313 - Extract Feature Failed - Failed:   
+[2024-04-23 19:30:02] production.ERROR: customer-2266 - 2266 - Extract Feature Failed - Failed:   
+[2024-04-23 19:31:15] production.INFO: customer-7510 - 7510 - OK - Successfully Uploaded  
+[2024-04-23 19:31:16] production.ERROR: customer-2980 - 2980 - Extract Feature Failed - Failed:   
+[2024-04-23 19:32:09] production.INFO: customer-3329 - 3329 - OK - Successfully Uploaded  
+[2024-04-23 19:32:10] production.ERROR: customer-3068 - 3068 - Extract Feature Failed - Failed:   
+[2024-04-23 19:32:52] production.ERROR: customer-2607 - 2607 - Extract Feature Failed - Failed:   
+[2024-04-23 19:32:54] production.INFO: customer-6168 - 6168 - OK - Successfully Uploaded  
+[2024-04-23 19:32:54] production.INFO: customer-3420 - 3420 - OK - Successfully Uploaded  
+[2024-04-23 19:32:55] production.ERROR: customer-9496 - 9496 - Extract Feature Failed - Failed:   
+[2024-04-23 19:32:56] production.ERROR: customer-2894 - 2894 - Extract Feature Failed - Failed:   
+[2024-04-23 19:32:57] production.INFO: customer-5260 - 5260 - OK - Successfully Uploaded  
+[2024-04-23 19:33:08] production.ERROR: customer-3361 - 3361 - Extract Feature Failed - Failed:   
+[2024-04-23 19:33:19] production.ERROR: customer-8615 - 8615 - Extract Feature Failed - Failed:   
+[2024-04-23 19:33:31] production.ERROR: customer-9418 - 9418 - Extract Feature Failed - Failed:   
+[2024-04-23 19:33:31] production.ERROR: customer-4665 - 4665 - Extract Feature Failed - Failed:   
+[2024-04-23 19:33:45] production.INFO: customer-4522 - 4522 - OK - Successfully Uploaded  
+[2024-04-23 19:36:13] production.INFO: customer-1359 - 1359 - OK - Successfully Uploaded  
+[2024-04-23 19:36:29] production.ERROR: customer-3179 - 3179 - Extract Feature Failed - Failed:   
+[2024-04-23 19:41:09] production.INFO: customer-4383 - 4383 - OK - Successfully Uploaded  
+[2024-04-23 19:57:22] production.INFO: customer-4529 - 4529 - OK - Successfully Uploaded  
+[2024-04-23 19:57:23] production.ERROR: customer-6142 - 6142 - Extract Feature Failed - Failed:   
+[2024-04-23 19:57:23] production.ERROR: customer-8996 - 8996 - Extract Feature Failed - Failed:   
+[2024-04-23 19:57:35] production.INFO: customer-1371 - 1371 - OK - Successfully Uploaded  
+[2024-04-23 19:57:35] production.ERROR: customer-4256 - 4256 - Face Exists With Name "customer-1371" - Failed:   
+[2024-04-23 19:57:36] production.INFO: customer-2479 - 2479 - OK - Successfully Uploaded  
+[2024-04-23 19:57:37] production.INFO: customer-1095 - 1095 - OK - Successfully Uploaded  
+[2024-04-23 19:58:39] production.ERROR: customer-7432 - 7432 - Extract Feature Failed - Failed:   
+[2024-04-23 19:59:31] production.ERROR: customer-4212 - 4212 - Extract Feature Failed - Failed:   
+[2024-04-23 19:59:42] production.ERROR: customer-2766 - 2766 - Extract Feature Failed - Failed:   
+[2024-04-23 19:59:53] production.ERROR: customer-1392 - 1392 - Extract Feature Failed - Failed:   
+[2024-04-23 20:00:04] production.INFO: customer-7047 - 7047 - OK - Successfully Uploaded  
+[2024-04-23 20:00:15] production.ERROR: customer-7994 - 7994 - Extract Feature Failed - Failed:   
+[2024-04-23 20:01:17] production.INFO: customer-6290 - 6290 - OK - Successfully Uploaded  
+[2024-04-23 20:01:49] production.ERROR: customer-7841 - 7841 - Extract Feature Failed - Failed:   
+[2024-04-23 20:03:22] production.ERROR: customer-5221 - 5221 - Extract Feature Failed - Failed:   
+[2024-04-23 20:03:23] production.INFO: customer-3362 - 3362 - OK - Successfully Uploaded  
+[2024-04-23 20:03:34] production.ERROR: customer-8863 - 8863 - Extract Feature Failed - Failed:   
+[2024-04-23 20:03:55] production.INFO: customer-1206 - 1206 - OK - Successfully Uploaded  
+[2024-04-23 20:04:07] production.INFO: customer-8236 - 8236 - OK - Successfully Uploaded  
+[2024-04-23 20:04:08] production.ERROR: customer-4784 - 4784 - Extract Feature Failed - Failed:   
+[2024-04-23 20:04:18] production.ERROR: customer-5681 - 5681 - Extract Feature Failed - Failed:   
+[2024-04-23 20:04:19] production.INFO: customer-9540 - 9540 - OK - Successfully Uploaded  
+[2024-04-23 20:04:21] production.INFO: customer-5810 - 5810 - OK - Successfully Uploaded  
+[2024-04-23 20:04:32] production.INFO: customer-7364 - 7364 - OK - Successfully Uploaded  
+[2024-04-23 20:04:33] production.ERROR: customer-3414 - 3414 - Extract Feature Failed - Failed:   
+[2024-04-23 20:04:34] production.INFO: customer-8144 - 8144 - OK - Successfully Uploaded  
+[2024-04-23 20:04:34] production.ERROR: customer-9455 - 9455 - Extract Feature Failed - Failed:   
+[2024-04-23 20:04:34] production.INFO: customer-2578 - 2578 - OK - Successfully Uploaded  
+[2024-04-23 20:04:46] production.ERROR: customer-2697 - 2697 - Extract Feature Failed - Failed:   
+[2024-04-23 20:04:46] production.ERROR: customer-7683 - 7683 - Extract Feature Failed - Failed:   
+[2024-04-23 20:05:07] production.ERROR: customer-2226 - 2226 - Extract Feature Failed - Failed:   
+[2024-04-23 20:06:51] production.INFO: customer-1823 - 1823 - OK - Successfully Uploaded  
+[2024-04-23 20:07:02] production.ERROR: customer-6861 - 6861 - Extract Feature Failed - Failed:   
+[2024-04-23 20:07:13] production.ERROR: customer-6127 - 6127 - Extract Feature Failed - Failed:   
+[2024-04-23 20:09:57] production.ERROR: customer-2094 - 2094 - Extract Feature Failed - Failed:   
+[2024-04-23 20:13:23] production.ERROR: customer-8657 - 8657 - Extract Feature Failed - Failed:   
+[2024-04-23 20:14:05] production.ERROR: customer-4232 - 4232 - Extract Feature Failed - Failed:   
+[2024-04-23 20:14:26] production.ERROR: customer-1250 - 1250 - Extract Feature Failed - Failed:   
+[2024-04-23 20:14:27] production.ERROR: customer-3012 - 3012 - Extract Feature Failed - Failed:   
+[2024-04-23 20:14:39] production.INFO: customer-8880 - 8880 - OK - Successfully Uploaded  
+[2024-04-23 20:14:41] production.ERROR: customer-6542 - 6542 - Extract Feature Failed - Failed:   
+[2024-04-23 20:17:36] production.INFO: customer-1963 - 1963 - OK - Successfully Uploaded  
+[2024-04-23 20:18:07] production.ERROR: customer-7534 - 7534 - Extract Feature Failed - Failed:   
+[2024-04-23 20:21:23] production.INFO: customer-7016 - 7016 - OK - Successfully Uploaded  
+[2024-04-23 20:23:06] production.ERROR: customer-7324 - 7324 - Extract Feature Failed - Failed:   
+[2024-04-23 20:23:59] production.ERROR: customer-2743 - 2743 - Extract Feature Failed - Failed:   
+[2024-04-23 20:24:52] production.ERROR: customer-9588 - 9588 - Extract Feature Failed - Failed:   
+[2024-04-23 20:26:45] production.ERROR: customer-4215 - 4215 - Extract Feature Failed - Failed:   
+[2024-04-23 20:27:58] production.ERROR: customer-5025 - 5025 - Extract Feature Failed - Failed:   
+[2024-04-23 20:27:59] production.ERROR: customer-2813 - 2813 - Extract Feature Failed - Failed:   
+[2024-04-23 20:29:01] production.ERROR: customer-8716 - 8716 - Extract Feature Failed - Failed:   
+[2024-04-23 20:29:02] production.ERROR: customer-7796 - 7796 - Extract Feature Failed - Failed:   
+[2024-04-23 20:29:13] production.ERROR: customer-5955 - 5955 - Extract Feature Failed - Failed:   
+[2024-04-23 20:30:26] production.ERROR: customer-5292 - 5292 - Extract Feature Failed - Failed:   
+[2024-04-23 20:30:26] production.ERROR: customer-9030 - 9030 - Extract Feature Failed - Failed:   
+[2024-04-23 20:32:30] production.ERROR: customer-3061 - 3061 - Extract Feature Failed - Failed:   
+[2024-04-23 20:33:13] production.ERROR: customer-2587 - 2587 - Extract Feature Failed - Failed:   
+[2024-04-23 20:33:13] production.ERROR: customer-9042 - 9042 - Extract Feature Failed - Failed:   
+[2024-04-23 20:33:35] production.ERROR: customer-7285 - 7285 - Extract Feature Failed - Failed:   
+[2024-04-23 20:33:48] production.ERROR: customer-9190 - 9190 - Extract Feature Failed - Failed:   
+[2024-04-23 20:35:21] production.ERROR: customer-5517 - 5517 - Extract Feature Failed - Failed:   
+[2024-04-23 20:35:32] production.ERROR: customer-1901 - 1901 - Extract Feature Failed - Failed:   
+[2024-04-23 20:37:57] production.ERROR: customer-1545 - 1545 - Extract Feature Failed - Failed:   
+[2024-04-23 20:38:29] production.INFO: customer-9250 - 9250 - OK - Successfully Uploaded  
+[2024-04-23 20:38:29] production.INFO: customer-4016 - 4016 - OK - Successfully Uploaded  
+[2024-04-23 20:38:41] production.INFO: customer-9718 - 9718 - OK - Successfully Uploaded  
+[2024-04-23 20:38:41] production.INFO: customer-9807 - 9807 - OK - Successfully Uploaded  
+[2024-04-23 20:39:23] production.INFO: customer-4674 - 4674 - OK - Successfully Uploaded  
+[2024-04-23 20:58:17] production.ERROR: customer-1221 - 1221 - Extract Feature Failed - Failed:   
+[2024-04-23 20:59:09] production.ERROR: customer-2297 - 2297 - Extract Feature Failed - Failed:   
+[2024-04-23 21:01:43] production.INFO: customer-2648 - 2648 - OK - Successfully Uploaded  
+[2024-04-23 21:02:46] production.INFO: customer-2716 - 2716 - OK - Successfully Uploaded  
+[2024-04-23 21:02:47] production.ERROR: customer-3653 - 3653 - Extract Feature Failed - Failed:   
+[2024-04-23 21:02:47] production.INFO: customer-8675 - 8675 - OK - Successfully Uploaded  
+[2024-04-23 21:02:48] production.ERROR: customer-6353 - 6353 - Extract Feature Failed - Failed:   
+[2024-04-23 21:02:50] production.INFO: customer-9685 - 9685 - OK - Successfully Uploaded  
+[2024-04-23 21:02:50] production.INFO: customer-1968 - 1968 - OK - Successfully Uploaded  
+[2024-04-23 21:02:51] production.INFO: customer-1141 - 1141 - OK - Successfully Uploaded  
+[2024-04-23 21:03:02] production.INFO: customer-9769 - 9769 - OK - Successfully Uploaded  
+[2024-04-23 21:05:27] production.INFO: customer-9375 - 9375 - OK - Successfully Uploaded  
+[2024-04-23 21:05:28] production.ERROR: customer-4623 - 4623 - Extract Feature Failed - Failed:   
+[2024-04-23 21:05:29] production.INFO: customer-4837 - 4837 - OK - Successfully Uploaded  
+[2024-04-23 21:05:40] production.ERROR: customer-3949 - 3949 - Extract Feature Failed - Failed:   
+[2024-04-23 21:05:41] production.INFO: customer-3967 - 3967 - OK - Successfully Uploaded  
+[2024-04-23 21:05:52] production.ERROR: customer-5086 - 5086 - Extract Feature Failed - Failed:   
+[2024-04-23 21:09:18] production.ERROR: customer-3860 - 3860 - Extract Feature Failed - Failed:   
+[2024-04-23 21:09:40] production.ERROR: customer-1024 - 1024 - Extract Feature Failed - Failed:   
+[2024-04-23 21:10:22] production.ERROR: customer-4232 - 4232 - Extract Feature Failed - Failed:   
+[2024-04-23 21:10:22] production.ERROR: customer-8484 - 8484 - Extract Feature Failed - Failed:   
+[2024-04-23 21:10:23] production.ERROR: customer-7084 - 7084 - Extract Feature Failed - Failed:   
+[2024-04-23 21:10:54] production.ERROR: customer-8692 - 8692 - Extract Feature Failed - Failed:   
+[2024-04-23 21:11:46] production.ERROR: customer-3843 - 3843 - Extract Feature Failed - Failed:   
+[2024-04-23 21:11:57] production.INFO: customer-7383 - 7383 - OK - Successfully Uploaded  
+[2024-04-23 21:11:58] production.INFO: customer-8322 - 8322 - OK - Successfully Uploaded  
+[2024-04-23 21:12:09] production.ERROR: customer-9514 - 9514 - Extract Feature Failed - Failed:   
+[2024-04-23 21:12:10] production.ERROR: customer-4445 - 4445 - Face Exists With Name "customer-8322" - Failed:   
+[2024-04-23 21:12:10] production.ERROR: customer-7967 - 7967 - Face Exists With Name "customer-8322" - Failed:   
+[2024-04-23 21:12:11] production.ERROR: customer-5090 - 5090 - Extract Feature Failed - Failed:   
+[2024-04-23 21:12:12] production.ERROR: customer-7472 - 7472 - Extract Feature Failed - Failed:   
+[2024-04-23 21:12:12] production.ERROR: customer-8971 - 8971 - Face Exists With Name "customer-8322" - Failed:   
+[2024-04-23 21:12:13] production.ERROR: customer-2670 - 2670 - Extract Feature Failed - Failed:   
+[2024-04-23 21:12:14] production.INFO: customer-9815 - 9815 - OK - Successfully Uploaded  
+[2024-04-23 21:12:25] production.ERROR: customer-7987 - 7987 - Extract Feature Failed - Failed:   
+[2024-04-23 21:12:37] production.INFO: customer-6160 - 6160 - OK - Successfully Uploaded  
+[2024-04-23 21:12:37] production.ERROR: customer-3173 - 3173 - Face Exists With Name "customer-9815" - Failed:   
+[2024-04-23 21:13:09] production.ERROR: customer-7470 - 7470 - Extract Feature Failed - Failed:   
+[2024-04-23 21:15:43] production.ERROR: customer-7321 - 7321 - Extract Feature Failed - Failed:   
+[2024-04-23 21:17:47] production.ERROR: customer-8324 - 8324 - Extract Feature Failed - Failed:   
+[2024-04-23 21:17:59] production.ERROR: customer-6451 - 6451 - Extract Feature Failed - Failed:   
+[2024-04-23 21:19:02] production.ERROR: customer-6561 - 6561 - Extract Feature Failed - Failed:   
+[2024-04-23 21:19:23] production.ERROR: customer-5023 - 5023 - Extract Feature Failed - Failed:   
+[2024-04-23 21:20:05] production.ERROR: customer-4962 - 4962 - Extract Feature Failed - Failed:   
+[2024-04-23 21:23:51] production.ERROR: customer-8483 - 8483 - Extract Feature Failed - Failed:   
+[2024-04-23 21:25:45] production.INFO: customer-3755 - 3755 - OK - Successfully Uploaded  
+[2024-04-23 21:25:47] production.INFO: customer-3494 - 3494 - OK - Successfully Uploaded  
+[2024-04-23 21:26:59] production.ERROR: customer-5913 - 5913 - Extract Feature Failed - Failed:   
+[2024-04-24 11:49:13] production.ERROR: customer-1247 - 1247 - Extract Feature Failed - Failed:   
+[2024-04-24 11:50:38] production.ERROR: customer-5793 - 5793 - Extract Feature Failed - Failed:   
+[2024-04-24 11:50:38] production.ERROR: customer-8058 - 8058 - Extract Feature Failed - Failed:   
+[2024-04-24 11:50:39] production.INFO: customer-6181 - 6181 - OK - Successfully Uploaded  
+[2024-04-24 11:51:32] production.ERROR: customer-9223 - 9223 - Extract Feature Failed - Failed:   
+[2024-04-24 11:51:53] production.INFO: customer-6201 - 6201 - OK - Successfully Uploaded  
+[2024-04-24 11:52:04] production.ERROR: customer-9348 - 9348 - Extract Feature Failed - Failed:   
+[2024-04-24 11:52:37] production.INFO: customer-4618 - 4618 - OK - Successfully Uploaded  
+[2024-04-24 11:52:48] production.INFO: customer-9027 - 9027 - OK - Successfully Uploaded  
+[2024-04-24 11:53:01] production.INFO: customer-4801 - 4801 - OK - Successfully Uploaded  
+[2024-04-24 11:54:35] production.ERROR: customer-6263 - 6263 - Extract Feature Failed - Failed:   
+[2024-04-24 12:00:59] production.ERROR: customer-7268 - 7268 - Extract Feature Failed - Failed:   
+[2024-04-24 12:03:14] production.ERROR: customer-7373 - 7373 - Extract Feature Failed - Failed:   
+[2024-04-24 12:03:26] production.ERROR: customer-2931 - 2931 - Extract Feature Failed - Failed:   
+[2024-04-24 12:03:26] production.ERROR: customer-9463 - 9463 - Extract Feature Failed - Failed:   
+[2024-04-24 12:03:28] production.ERROR: customer-8287 - 8287 - Extract Feature Failed - Failed:   
+[2024-04-24 12:03:28] production.ERROR: customer-2391 - 2391 - Extract Feature Failed - Failed:   
+[2024-04-24 12:04:11] production.INFO: customer-3818 - 3818 - OK - Successfully Uploaded  
+[2024-04-24 12:04:13] production.INFO: customer-4128 - 4128 - OK - Successfully Uploaded  
+[2024-04-24 12:05:36] production.ERROR: customer-6907 - 6907 - Extract Feature Failed - Failed:   
+[2024-04-24 12:07:41] production.INFO: customer-4574 - 4574 - OK - Successfully Uploaded  
+[2024-04-24 12:07:42] production.ERROR: customer-8935 - 8935 - Face Exists With Name "customer-4574" - Failed:   
+[2024-04-24 12:07:54] production.ERROR: customer-1985 - 1985 - Extract Feature Failed - Failed:   
+[2024-04-24 12:08:06] production.ERROR: customer-8380 - 8380 - Extract Feature Failed - Failed:   
+[2024-04-24 12:08:38] production.INFO: customer-9221 - 9221 - OK - Successfully Uploaded  
+[2024-04-24 12:08:39] production.INFO: customer-6902 - 6902 - OK - Successfully Uploaded  
+[2024-04-24 12:08:39] production.ERROR: customer-5539 - 5539 - Extract Feature Failed - Failed:   
+[2024-04-24 12:08:40] production.INFO: customer-2923 - 2923 - OK - Successfully Uploaded  
+[2024-04-24 12:08:52] production.ERROR: customer-3737 - 3737 - Face Exists With Name "customer-2923" - Failed:   
+[2024-04-24 12:10:56] production.ERROR: customer-2872 - 2872 - Extract Feature Failed - Failed:   
+[2024-04-24 12:10:57] production.ERROR: customer-7381 - 7381 - Extract Feature Failed - Failed:   
+[2024-04-24 12:10:58] production.ERROR: customer-6514 - 6514 - Extract Feature Failed - Failed:   
+[2024-04-24 12:15:07] production.ERROR: customer-8693 - 8693 - Extract Feature Failed - Failed:   
+[2024-04-24 12:19:47] production.ERROR: customer-9555 - 9555 - Extract Feature Failed - Failed:   
+[2024-04-24 12:19:48] production.ERROR: customer-4970 - 4970 - Extract Feature Failed - Failed:   
+[2024-04-24 12:19:48] production.INFO: customer-4111 - 4111 - OK - Successfully Uploaded  
+[2024-04-24 12:20:01] production.INFO: customer-3734 - 3734 - OK - Successfully Uploaded  
+[2024-04-24 12:20:12] production.INFO: customer-2949 - 2949 - OK - Successfully Uploaded  
+[2024-04-24 12:23:29] production.ERROR: customer-5684 - 5684 - Extract Feature Failed - Failed:   
+[2024-04-24 12:30:13] production.ERROR: customer-2184 - 2184 - Extract Feature Failed - Failed:   
+[2024-04-24 12:30:14] production.INFO: customer-6297 - 6297 - OK - Successfully Uploaded  
+[2024-04-24 12:30:15] production.INFO: customer-3747 - 3747 - OK - Successfully Uploaded  
+[2024-04-24 12:30:16] production.ERROR: customer-7883 - 7883 - Extract Feature Failed - Failed:   
+[2024-04-24 12:30:17] production.ERROR: customer-7120 - 7120 - Extract Feature Failed - Failed:   
+[2024-04-24 12:30:38] production.ERROR: customer-7384 - 7384 - Extract Feature Failed - Failed:   
+[2024-04-24 12:31:41] production.ERROR: customer-1844 - 1844 - Extract Feature Failed - Failed:   
+[2024-04-24 12:31:42] production.ERROR: customer-7078 - 7078 - Extract Feature Failed - Failed:   
+[2024-04-24 12:31:54] production.ERROR: customer-9243 - 9243 - Extract Feature Failed - Failed:   
+[2024-04-24 12:32:05] production.ERROR: customer-9559 - 9559 - Extract Feature Failed - Failed:   
+[2024-04-24 12:32:06] production.ERROR: customer-4644 - 4644 - Extract Feature Failed - Failed:   
+[2024-04-24 12:32:17] production.ERROR: customer-9091 - 9091 - Extract Feature Failed - Failed:   
+[2024-04-24 12:32:50] production.ERROR: customer-7587 - 7587 - Extract Feature Failed - Failed:   
+[2024-04-24 12:36:18] production.INFO: customer-4922 - 4922 - OK - Successfully Uploaded  
+[2024-04-24 12:36:19] production.ERROR: customer-3032 - 3032 - Extract Feature Failed - Failed:   
+[2024-04-24 12:37:42] production.INFO: customer-7826 - 7826 - OK - Successfully Uploaded  
+[2024-04-24 12:39:16] production.ERROR: customer-4680 - 4680 - Extract Feature Failed - Failed:   
+[2024-04-24 12:42:34] production.INFO: customer-2167 - 2167 - OK - Successfully Uploaded  
+[2024-04-24 12:45:42] production.ERROR: customer-7574 - 7574 - Extract Feature Failed - Failed:   
+[2024-04-24 12:46:24] production.INFO: customer-1944 - 1944 - OK - Successfully Uploaded  
+[2024-04-24 12:48:29] production.INFO: customer-9530 - 9530 - OK - Successfully Uploaded  
+[2024-04-24 12:48:41] production.INFO: customer-2412 - 2412 - OK - Successfully Uploaded  
+[2024-04-24 12:52:18] production.ERROR: customer-7690 - 7690 - Extract Feature Failed - Failed:   
+[2024-04-24 12:52:19] production.ERROR: customer-9455 - 9455 - Extract Feature Failed - Failed:   
+[2024-04-24 12:52:42] production.ERROR: customer-5442 - 5442 - Extract Feature Failed - Failed:   
+[2024-04-24 12:52:54] production.ERROR: customer-2076 - 2076 - Extract Feature Failed - Failed:   
+[2024-04-24 13:19:58] production.INFO: customer-3780 - 3780 - OK - Successfully Uploaded  
+[2024-04-24 13:19:59] production.INFO: customer-6321 - 6321 - OK - Successfully Uploaded  
+[2024-04-24 13:25:10] production.ERROR: customer-3793 - 3793 - Extract Feature Failed - Failed:   
+[2024-04-24 13:43:38] production.INFO: customer-3950 - 3950 - OK - Successfully Uploaded  
+[2024-04-24 13:49:10] production.INFO: customer-6157 - 6157 - OK - Successfully Uploaded  
+[2024-04-24 13:49:10] production.ERROR: customer-9311 - 9311 - Extract Feature Failed - Failed:   
+[2024-04-24 13:49:11] production.INFO: customer-6491 - 6491 - OK - Successfully Uploaded  
+[2024-04-24 13:49:43] production.ERROR: customer-2270 - 2270 - Extract Feature Failed - Failed:   
+[2024-04-24 13:49:54] production.ERROR: customer-6957 - 6957 - Extract Feature Failed - Failed:   
+[2024-04-24 14:08:24] production.INFO: customer-3575 - 3575 - OK - Successfully Uploaded  
+[2024-04-24 14:22:43] production.ERROR: customer-6169 - 6169 - Extract Feature Failed - Failed:   
+[2024-04-24 14:24:18] production.ERROR: customer-5209 - 5209 - Extract Feature Failed - Failed:   
+[2024-04-24 14:24:18] production.ERROR: customer-1277 - 1277 - Extract Feature Failed - Failed:   
+[2024-04-24 14:24:30] production.ERROR: customer-3661 - 3661 - Extract Feature Failed - Failed:   
+[2024-04-24 14:24:31] production.ERROR: customer-2092 - 2092 - Extract Feature Failed - Failed:   
+[2024-04-24 14:24:42] production.ERROR: customer-6098 - 6098 - Extract Feature Failed - Failed:   
+[2024-04-24 14:24:53] production.ERROR: customer-8317 - 8317 - Extract Feature Failed - Failed:   
+[2024-04-24 14:24:54] production.ERROR: customer-7439 - 7439 - Extract Feature Failed - Failed:   
+[2024-04-24 14:25:05] production.ERROR: customer-5678 - 5678 - Extract Feature Failed - Failed:   
+[2024-04-24 14:25:06] production.ERROR: customer-6114 - 6114 - Extract Feature Failed - Failed:   
+[2024-04-24 14:25:27] production.ERROR: customer-1428 - 1428 - Extract Feature Failed - Failed:   
+[2024-04-24 14:25:49] production.ERROR: customer-1275 - 1275 - Extract Feature Failed - Failed:   
+[2024-04-24 14:26:00] production.ERROR: customer-9091 - 9091 - Extract Feature Failed - Failed:   
+[2024-04-24 14:27:03] production.ERROR: customer-9552 - 9552 - Extract Feature Failed - Failed:   
+[2024-04-24 14:27:46] production.INFO: customer-7079 - 7079 - OK - Successfully Uploaded  
+[2024-04-24 14:29:09] production.ERROR: customer-6882 - 6882 - Extract Feature Failed - Failed:   
+[2024-04-24 14:29:10] production.INFO: customer-7210 - 7210 - OK - Successfully Uploaded  
+[2024-04-24 14:31:26] production.INFO: customer-1171 - 1171 - OK - Successfully Uploaded  
+[2024-04-24 14:31:27] production.ERROR: customer-3897 - 3897 - Face Exists With Name "customer-1171" - Failed:   
+[2024-04-24 14:31:39] production.INFO: customer-3154 - 3154 - OK - Successfully Uploaded  
+[2024-04-24 14:31:51] production.INFO: customer-4469 - 4469 - OK - Successfully Uploaded  
+[2024-04-24 14:50:38] production.ERROR: customer-2061 - 2061 - Extract Feature Failed - Failed:   
+[2024-04-24 14:56:31] production.INFO: customer-8947 - 8947 - OK - Successfully Uploaded  
+[2024-04-24 15:43:34] production.ERROR: customer-2784 - 2784 - Extract Feature Failed - Failed:   
+[2024-04-24 16:33:19] production.ERROR: customer-8348 - 8348 - Extract Feature Failed - Failed:   
+[2024-04-24 16:33:19] production.ERROR: customer-8348 - 8348 - Extract Feature Failed - Failed:   
+[2024-04-24 16:33:42] production.INFO: customer-6148 - 6148 - OK - Successfully Uploaded  
+[2024-04-24 16:33:43] production.INFO: customer-6148 - 6148 - OK - Successfully Uploaded  
+[2024-04-24 16:34:56] production.INFO: customer-6186 - 6186 - OK - Successfully Uploaded  
+[2024-04-24 16:34:57] production.INFO: customer-6186 - 6186 - OK - Successfully Uploaded  
+[2024-04-24 16:35:19] production.INFO: customer-2510 - 2510 - OK - Successfully Uploaded  
+[2024-04-24 16:35:20] production.INFO: customer-2510 - 2510 - OK - Successfully Uploaded  
+[2024-04-24 16:35:21] production.INFO: customer-2163 - 2163 - OK - Successfully Uploaded  
+[2024-04-24 16:35:21] production.INFO: customer-2163 - 2163 - OK - Successfully Uploaded  

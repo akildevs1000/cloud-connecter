@@ -108,64 +108,6 @@ class SDKControllerV1 extends Controller
         return $arr;
     }
 
-    public function uploadCustomersToCamera()
-    {
-        $devices = Device::where('model_number', "CAMERA1")->get(["device_id", "camera_sdk_url", "branch_id", "company_id"]);
-        $imageDirectory = public_path('camera-unregsitered-faces-logs');
-        $files = glob($imageDirectory . '/*');
-
-        if (!is_dir($imageDirectory) || !count($files)) {
-            return "Directory not found";
-        }
-
-        $message = [];
-        $customers = [];
-
-        foreach ($devices as $device) {
-            foreach ($files as $file) {
-
-                $fileCount = glob($file . '/*');
-                if (count($fileCount) == 0) {
-                    File::deleteDirectory(($file));
-                } else {
-                    $UserID = rand(1000, 9999);
-                    $customer_name =  "customer-" . $UserID;
-                    $file = glob($file . '/*')[0];
-
-                    $imageData = file_get_contents($file);
-                    $md5string = base64_encode($imageData);
-
-                    $message[] = (new DeviceCameraController($device['camera_sdk_url']))->pushUserToCameraDevice($customer_name,  $UserID, $md5string);
-                    $destinationPath = public_path('customer/profile_picture/'); // Assuming you want to move it to the 'images' folder inside the public directory                  
-                    if (!File::exists($destinationPath)) {
-                        File::makeDirectory($destinationPath, 0755, true);
-                    }
-                    $filename = "$customer_name.jpg";
-                    File::copy($file, $destinationPath . $filename);
-                    File::deleteDirectory(dirname($file));
-
-                    // Get the public URL of the stored image
-                    $customers[] = [
-                        'full_name' => $customer_name,
-                        'first_name' => $customer_name,
-                        'last_name' => $customer_name,
-                        'system_user_id' => $UserID,
-                        'profile_picture' => $filename,
-                        'type' => 'normal',
-                        'date' => date("Y-m-d"),
-                        'status' => 'whitelisted',
-                        'branch_id' => $device['branch_id'],
-                        'company_id' => $device['company_id'],
-                    ];
-                }
-            }
-        }
-
-        Customer::insert($customers);
-
-        return  $message;
-    }
-
 
     public function PersonAddRangePhotos(Request $request)
     {

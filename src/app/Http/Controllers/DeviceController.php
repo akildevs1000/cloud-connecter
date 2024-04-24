@@ -797,11 +797,15 @@ class DeviceController extends Controller
 
     public function checkDevicesHealthCompanyId($company_id = 0, $ip)
     {
+
         $device = Device::query();
         $device->when($company_id > 0, fn ($q) => $q->where('company_id', $company_id));
-        $device->whereIn("device_category_name", ["CAMERA", "OXSAI"]);
+        $device->where("device_category_name", "CAMERA");
+        $device->where("camera_sdk_url", $ip);
+
         $total_devices_count = $device->where("device_category_name", "CAMERA")->count();
-        $devices = $device->where("device_category_name", "CAMERA")->get(["company_id", "device_id"])->toArray();
+        $devices = $device->get(["company_id", "device_id"])->toArray();
+
 
         $uniqueCompanyIds  = array_unique(array_column($devices, 'company_id'));
 
@@ -810,7 +814,8 @@ class DeviceController extends Controller
 
         try {
 
-            $count = (new DeviceCameraController($ip))->updateCameraDeviceLiveStatus($devices);
+            $count = (new DeviceCameraController($ip))->updateCameraDeviceLiveStatus($devices) . "\n";
+
             $online_devices_count = $online_devices_count +  $count;
             $offline_devices_count = $total_devices_count - $online_devices_count;
 

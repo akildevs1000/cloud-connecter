@@ -42,7 +42,11 @@ class DeviceCameraController extends Controller
             }
         }
 
-        Device::whereIn("device_id", $DeviceIDs)->update(["status_id" => 1, "last_live_datetime" => date("Y-m-d H:i:s")]);
+        Device::whereIn("device_id", $DeviceIDs)->update([
+            "status_id" => 1,
+            "last_live_datetime" => date("Y-m-d H:i:s"),
+            "camera_sdk_url" => $this->camera_sdk_url
+        ]);
 
         return  $online_devices_count;
     }
@@ -112,11 +116,10 @@ class DeviceCameraController extends Controller
     }
     public function getActiveSessionId()
     {
-
-
-
         $post_data = ' ';
+
         $response = $this->curlPost('/ISAPI/Security/Login', $post_data);
+
         $xml = simplexml_load_string($response);
         if ($xml == '') {
             return ["message" => "SessionID is not generated.", "status" => false];
@@ -134,7 +137,7 @@ class DeviceCameraController extends Controller
             return   ["message" => "SDK Password is Empty", "status" => false];
         }
 
-        $md5string = md5($sessionId . ':' . env("CAMERA_SDK_LOGIN_USERNAME") . ':' . env("CAMERA_SDK_LOGIN_PASSWORD") . ':IPCAM');
+        $md5string = md5($sessionId . ':' . "admin" . ':' . "Admin@123" . ':IPCAM');
         if ($md5string != '') {
 
 
@@ -154,8 +157,6 @@ class DeviceCameraController extends Controller
                     return   ["message" => $sessionId, "status" => true];
                 } else {
                     return   ["message" => "SessionID activation is failed", "status" => false];
-
-                    Log::channel("camerasdk")->error("SessionID activation is failed");
                 }
             }
         } else {
@@ -164,6 +165,7 @@ class DeviceCameraController extends Controller
     }
     public function curlPost($url, $post_data)
     {
+
         if ($this->camera_sdk_url != '') {
             $url = $this->camera_sdk_url .   $url;
             $curl = curl_init();
@@ -186,57 +188,4 @@ class DeviceCameraController extends Controller
             Log::channel("camerasdk")->info('CURL ' .  $url . '- EMPTY SDK URL in DB Devices Table');
         }
     }
-
-    // public function curlPostImage($url, $post_data)
-    // {
-
-
-
-    //     $url = env('CAMERA_SDK_URL') .   $url;
-    //     $curl = curl_init();
-    //     curl_setopt_array($curl, array(
-    //         CURLOPT_URL => $url,
-    //         CURLOPT_RETURNTRANSFER => true,
-
-
-    //         CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-    //         CURLOPT_CUSTOMREQUEST => 'POST',
-    //         CURLOPT_POSTFIELDS => $post_data,
-    //         CURLOPT_HTTPHEADER => array(
-    //             'Content-Type: text/plain'
-    //         ),
-    //     ));
-
-    //     $response = curl_exec($curl);
-    //     curl_close($curl);
-
-    //     return $response;
-    // }
-    // public function curlPost_Old($url, $post_data)
-    // {
-
-
-
-    //     $url = env('CAMERA_SDK_URL') .   $url;
-    //     $curl = curl_init();
-    //     curl_setopt_array($curl, array(
-    //         CURLOPT_URL => $url,
-    //         CURLOPT_RETURNTRANSFER => true,
-    //         CURLOPT_ENCODING => '',
-    //         CURLOPT_MAXREDIRS => 10,
-    //         CURLOPT_TIMEOUT => 0,
-    //         CURLOPT_FOLLOWLOCATION => true,
-    //         CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-    //         CURLOPT_CUSTOMREQUEST => 'POST',
-    //         CURLOPT_POSTFIELDS => $post_data,
-    //         CURLOPT_HTTPHEADER => array(
-    //             'Content-Type: text/plain'
-    //         ),
-    //     ));
-
-    //     $response = curl_exec($curl);
-    //     curl_close($curl);
-
-    //     return $response;
-    // }
 }

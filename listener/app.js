@@ -27,6 +27,8 @@ const server = net.createServer((socket) => {
   //let GlobalformattedDate = `${d.padStart(2, 0)}-${m.padStart(2, 0)}-${y}`;
   const logFilePath = `${BASE_URL}/storage/app/camera/camera-logs-${formattedDate}.csv`;
 
+  console.log(logFilePath);
+
   socket.on("data", (data) => {
     let TodayDatetime = getTime();
     try {
@@ -96,13 +98,13 @@ function saveUNRegisteredMemberstoImage(xmlData, TodayDatetime, deviceId) {
             const FaceId = result.DetectedFaceList.Face_0[0].FaceID[0];
             const Snapshot = result.DetectedFaceList.Face_0[0].Snapshot[0];
             const SnapshotNum =
-              result.DetectedFaceList.Face_0[0].SnapshotNum[0];
+              result.DetectedFaceList.Face_0[0].FaceSnapFile[0] ?? 0;
             const Quality = result.DetectedFaceList.Face_0[0].Quality[0];
 
+            
+            console.log(Quality);
 
-
-
-            if (Quality >= 0.9) {
+            if (Quality > 0.9) {
               logConsoleStatus(
                 `${TodayDatetime} - Saved unregistered member - Face Id:  ${FaceId} - Quality:${Quality}`
               );
