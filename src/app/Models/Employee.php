@@ -39,6 +39,7 @@ class Employee extends Model
                 ],
             ]);
     }
+
     public function schedule_active()
     {
         return $this->hasOne(ScheduleEmployee::class, "employee_id", "system_user_id")
@@ -681,5 +682,10 @@ class Employee extends Model
     public function scopeExcludeRelations($query)
     {
         return $query->withOut(["schedule", "department", "designation", "sub_department", "user", "branch"]);
+    }
+
+    public function devices()
+    {
+        return $this->hasMany(DeviceEmployee::class, "device_id", "employee_id");
     }
 }

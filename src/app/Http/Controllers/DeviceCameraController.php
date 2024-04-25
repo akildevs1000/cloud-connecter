@@ -77,9 +77,8 @@ class DeviceCameraController extends Controller
         }
     }
 
-    public function pushUserToCameraDevice($name,  $system_user_id, $base65Image)
+    public function pushUserToCameraDevice($name,  $system_user_id, $base65Image, $device_id = 0)
     {
-        $gender  = 'Male';
         $sessionResponse = $this->getActiveSessionId();
         if ($sessionResponse['status']) {
             $sessionId = $sessionResponse['message'];
@@ -99,20 +98,42 @@ class DeviceCameraController extends Controller
 
             $xml = simplexml_load_string($response);
 
+
+            $statusString = (string) $xml->StatusString;
+
             if ($xml->StatusCode == 200) {
-                return ["statusCode" => 200, "message" => $xml->StatusString];
+                return ["statusCode" => 200, "message" => $statusString, "user_id" => $system_user_id, "device_id" => $device_id];
             } else {
-                return ["statusCode" => 500, "message" => $xml->StatusString , "user_id" => $system_user_id];
+                return ["statusCode" => 500, "message" => $statusString, "user_id" => $system_user_id, "device_id" => $device_id];
             }
         } else {
-            return ["statusCode" => 500, "message" => $sessionResponse['message']];
+            return ["statusCode" => 500, "message" => $sessionResponse['message'], "user_id" => $system_user_id, "device_id" => $device_id];
         }
     }
     public function getActiveSessionId()
     {
+        if ($this->camera_sdk_url == '') {
+            return;
+        }
+
         $post_data = ' ';
 
-        $response = $this->curlPost('/ISAPI/Security/Login', $post_data);
+        $url = $this->camera_sdk_url .   '/ISAPI/Security/Login';
+        $curl = curl_init();
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => $url,
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_TIMEOUT => 10,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => 'POST',
+            CURLOPT_POSTFIELDS => $post_data,
+            CURLOPT_HTTPHEADER => array(
+                'Content-Type: text/plain'
+            ),
+        ));
+
+        $response = curl_exec($curl);
+        curl_close($curl);
 
         $xml = simplexml_load_string($response);
         if ($xml == '') {

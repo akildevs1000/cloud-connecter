@@ -41,4 +41,9 @@ class Device extends Model
     {
         return $query->where('name', 'not like', '%Mobile%')->where('name', 'not like', '%Manual%');
     }
+
+    public function employees()
+    {
+        return $this->belongsToMany(Employee::class, 'employee_device', 'device_id', 'employee_id');
+    }
 }
