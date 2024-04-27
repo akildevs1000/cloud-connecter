@@ -113,7 +113,7 @@ class SDKController extends Controller
     {
         $devices = Device::where('device_category_name', "CAMERA")->get(["device_id", "camera_sdk_url", "branch_id", "company_id"]);
         $imageDirectory = public_path('camera-unregsitered-faces-logs');
-        $files = glob($imageDirectory . '/*');
+        $files = array_slice(glob($imageDirectory . '/*'), 0, 5);
 
         if (!is_dir($imageDirectory) || !count($files)) {
             return "Directory not found";
@@ -121,10 +121,13 @@ class SDKController extends Controller
 
         $customers = [];
 
-
+        $UserID = 0;
+        $customer_name = null;
+        $filename = null;
         foreach ($files as $file) {
 
             $fileCount = glob($file . '/*');
+
 
             if (count($fileCount) == 0) {
                 File::deleteDirectory(($file));
@@ -140,9 +143,8 @@ class SDKController extends Controller
 
             foreach ($devices as $device) {
                 $response = (new DeviceCameraController($device['camera_sdk_url']))->pushUserToCameraDevice($customer_name,  $UserID, $md5string);
+
                 if ($response["statusCode"] == 200) {
-
-
                     $customers[$UserID] = [
                         'full_name' => $customer_name,
                         'first_name' => $customer_name,
@@ -155,19 +157,21 @@ class SDKController extends Controller
                         'branch_id' => $device['branch_id'],
                         'company_id' => $device['company_id'],
                     ];
-                }
-            }
 
-            if (array_key_exists($UserID, $customers)) {
-                try {
-                    Http::withoutVerifying()->post("https://analyticsbackend.xtremeguard.org/api/image-upload", [
-                        "imageName" => $filename,
-                        "profile_picture" => $md5string,
-                    ]);
-                    Customer::create($customers[$UserID]);
+                    try {
+                        Http::withoutVerifying()->post("https://analyticsbackend.xtremeguard.org/api/image-upload", [
+                            "imageName" => $filename,
+                            "profile_picture" => $md5string,
+                        ]);
+                        Customer::create($customers[$UserID]);
+                        File::deleteDirectory(dirname($file));
+                    } catch (\Exception $e) {
+                        return response()->json(['error' => $e->getMessage()], 500);
+                    }
+                } else {
                     File::deleteDirectory(dirname($file));
-                } catch (\Exception $e) {
-                    return response()->json(['error' => $e->getMessage()], 500);
+                    $response['action'] = "Deleting file => " . $file;
+                    return $response;
                 }
             }
         }
